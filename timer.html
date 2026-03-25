@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Study Timer</h1>
+
+    <label class="toggle-switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+    </label>
+</header>
+
+<div class="theme-toggle">
+    <span id="modeText">Dark Mode</span>
+    <label class="toggle-switch">
+        <input type="checkbox" onclick="toggleTheme(); updateModeText(this)">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<section class="cards">
+    <div class="card big">
+        <h2 id="timer">25:00</h2>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+</section>
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>FocusFlow</h1>
+    <p>Stay focused. Get things done.</p>
+
+    <div class="theme-toggle">
+        <span id="modeText">Dark Mode</span>
+        <label class="toggle-switch">
+            <input type="checkbox" onclick="toggleTheme(); updateModeText(this)">
+            <span class="slider"></span>
+        </label>
+    </div>
+</header>
+
+<section class="cards">
+    <a href="notes.html" class="card big">📚 Notes</a>
+    <a href="timer.html" class="card big">⏰ Timer(Pomodoro)</a>
+    <a href="todo.html" class="card big">✅ To-Do</a>
+</section>
+
+<section class="progress">
+    <h2>📊 Your Progress</h2>
+    <div class="stats">
+        <div class="stat">Tasks<br><b id="taskCount">0</b></div>
+        <div class="stat">Sessions<br><b id="sessionCount">0</b></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

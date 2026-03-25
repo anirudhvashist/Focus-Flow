@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>To-Do List</h1>
+
+    <label class="toggle-switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+    </label>
+</header>
+
+<div class="theme-toggle">
+    <span id="modeText">Dark Mode</span>
+    <label class="toggle-switch">
+        <input type="checkbox" onclick="toggleTheme(); updateModeText(this)">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<section class="cards">
+    <div class="card big">
+        <input id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+</section>
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<script src="script.js"></script>
+</body>
+</html>
